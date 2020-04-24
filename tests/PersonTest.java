@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PersonTest {
 
+    //Free Ride
     @Test
     public void testGettersPerson() {
         Person p = new Person("Veiga", 987654321);
@@ -14,6 +15,7 @@ class PersonTest {
         assertEquals(p.getId(), p.getId());
     }
 
+    //Local Hero
     @Test
     public void readFile() throws IOException {
         var fileLocation = "C:\\Users\\sr.jveiga\\Desktop\\test.txt";
@@ -25,6 +27,7 @@ class PersonTest {
         assertEquals("I'm a file ready to be read.", s);
     }
 
+    //Happy Path
     @Test
     public void testGetData() {
         Person p = new Person("Veiga", 987654321);
